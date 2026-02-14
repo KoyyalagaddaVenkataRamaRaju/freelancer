@@ -1,0 +1,156 @@
+.client-applications-page {
+  padding: 36px 6%;
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+.applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* FILTER */
+.project-filter {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+/* GRID */
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.application-card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  gap: 20px;
+  box-shadow:
+    0 10px 25px rgba(2,6,23,0.05),
+    0 20px 40px rgba(2,6,23,0.08);
+  transition: .3s;
+}
+
+.application-card:hover {
+  transform: translateY(-6px);
+}
+
+/* SIDES */
+.application-side {
+  width: 50%;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.proposal {
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.skill {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.skill.red {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.skill.green {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* BUDGET */
+.budget {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ACTIONS */
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.approve-btn {
+  background: #10b981;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.reject-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* STATUS */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status.Accepted {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status.Rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .application-card {
+    flex-direction: column;
+  }
+
+  .application-side {
+    width: 100%;
+  }
+}

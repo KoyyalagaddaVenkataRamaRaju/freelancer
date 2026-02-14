@@ -1,0 +1,101 @@
+.my-projects-page {
+  padding: 36px 6%;
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left h2 {
+  margin: 0;
+}
+
+/* FILTER */
+.status-filter {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.project-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow:
+    0 10px 25px rgba(2,6,23,0.05),
+    0 20px 40px rgba(2,6,23,0.06);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* HEAD */
+.project-card-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* DESC */
+.project-desc {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+/* META */
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-meta span {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.project-meta p {
+  margin: 2px 0 0;
+  font-weight: 600;
+}
+
+/* STATUS BADGE */
+.status {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.status.Assigned {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.status.Completed {
+  background: #dcfce7;
+  color: #15803d;
+}

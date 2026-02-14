@@ -1,0 +1,99 @@
+/* NAVBAR ROOT */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+/* LEFT LOGO */
+.nav-left h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #059669;
+}
+
+.nav-left span {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* NAV OPTIONS */
+.nav-options {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* LINKS */
+.nav-options p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #334155;
+  position: relative;
+  transition: .3s;
+}
+
+/* HOVER UNDERLINE */
+.nav-options p::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #10b981;
+  transition: .3s;
+}
+
+.nav-options p:hover {
+  color: #10b981;
+}
+
+.nav-options p:hover::after {
+  width: 100%;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 6px 18px rgba(239,68,68,.25);
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .nav-options {
+    gap: 16px;
+  }
+
+  .nav-options p {
+    font-size: 0.85rem;
+  }
+
+  .logout-btn {
+    padding: 7px 16px;
+  }
+}

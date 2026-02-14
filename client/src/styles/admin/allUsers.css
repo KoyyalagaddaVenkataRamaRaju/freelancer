@@ -1,0 +1,119 @@
+.users-page {
+  padding: 36px 6%;
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+.users-header h2 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.users-header p {
+  color: #64748b;
+  margin-bottom: 26px;
+}
+
+/* GRID */
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.user-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow:
+    0 10px 25px rgba(2,6,23,0.05),
+    0 20px 40px rgba(2,6,23,0.06);
+  transition: .3s;
+}
+
+.user-card:hover {
+  transform: translateY(-6px);
+}
+
+/* TOP */
+.user-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* AVATAR */
+.user-avatar {
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(135deg,#10b981,#14b8a6);
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* EMAIL */
+.user-email {
+  font-size: 0.85rem;
+  color: #64748b;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* DETAILS */
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.user-details span {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.user-details p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 2px 0 0;
+}
+
+/* ROLE BADGES */
+.role-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+}
+
+.role-badge.admin {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.role-badge.freelancer {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.role-badge.client {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .users-page {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,89 @@
+/* PAGE */
+.admin-dashboard {
+  padding: 40px 6%;
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+.admin-header h2 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.admin-header p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* CARD */
+.stat-card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow:
+    0 10px 20px rgba(2,6,23,0.04),
+    0 20px 40px rgba(2,6,23,0.06);
+  transition: all .3s ease;
+  position: relative;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px rgba(2,6,23,0.08),
+    0 30px 70px rgba(2,6,23,0.1);
+}
+
+/* ICON */
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  background: #ecfdf5;
+  color: #059669;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.stat-icon.green { background: #ecfdf5; color: #16a34a; }
+.stat-icon.blue { background: #eff6ff; color: #2563eb; }
+.stat-icon.purple { background: #f5f3ff; color: #7c3aed; }
+
+/* TEXT */
+.stat-card h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.stat-card p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 6px 0 14px;
+  color: #0f172a;
+}
+
+/* BUTTON */
+.stat-card button {
+  background: none;
+  border: none;
+  color: #059669;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.stat-card button:hover {
+  text-decoration: underline;
+}
